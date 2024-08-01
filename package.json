@@ -10,7 +10,8 @@
     "astro": "astro",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_d06e712a71f784d"
+    "chromatic": "npx chromatic --project-token=chpt_d06e712a71f784d",
+    "plop": "plop"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.3",
@@ -33,6 +34,7 @@
     "@storybook/react-vite": "^8.2.6",
     "@storybook/test": "^8.2.6",
     "chromatic": "^11.7.0",
+    "plop": "^4.0.1",
     "storybook": "^8.2.6"
   }
 }

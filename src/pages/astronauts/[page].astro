@@ -19,8 +19,9 @@ export async function getStaticPaths({ paginate }) {
 }
 // All paginated data is passed on the "page" prop
 const { page } = Astro.props;
+const data = Astro.locals;
 
-console.log(`🙈  page:`, page);
+console.log(`🙈  data:`, data);
 ---
 
 <!--Display the current page number. Astro.params.page can also be used!-->
@@ -28,4 +29,6 @@ console.log(`🙈  page:`, page);
 <ul>
   <!--List the array of astronaut info-->
   {page.data.map(({ astronaut }) => <li>{astronaut}</li>)}
+
+  <p>This {data.property} is from middleware.</p>
 </ul>
