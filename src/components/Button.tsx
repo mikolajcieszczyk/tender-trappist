@@ -1,16 +1,11 @@
 export interface ButtonProps {
   text: string;
   onClick: () => void;
-  disabled?: boolean;
 }
 
-export const Button = ({ text, onClick, disabled }: ButtonProps) => {
+export const Button = ({ text, onClick }: ButtonProps) => {
   return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      style={{ backgroundColor: "red", color: "blue" }}
-    >
+    <button onClick={onClick} style={{ backgroundColor: "red", color: "blue" }}>
       {text}
     </button>
   );
