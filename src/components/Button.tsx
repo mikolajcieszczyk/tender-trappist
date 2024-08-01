@@ -9,7 +9,7 @@ export const Button = ({ text, onClick, disabled }: ButtonProps) => {
     <button
       onClick={onClick}
       disabled={disabled}
-      style={{ backgroundColor: "red", color: "white" }}
+      style={{ backgroundColor: "red", color: "blue" }}
     >
       {text}
     </button>
