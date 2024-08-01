@@ -6,7 +6,11 @@ export interface ButtonProps {
 
 export const Button = ({ text, onClick, disabled }: ButtonProps) => {
   return (
-    <button onClick={onClick} disabled={disabled}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      style={{ backgroundColor: "red" }}
+    >
       {text}
     </button>
   );
